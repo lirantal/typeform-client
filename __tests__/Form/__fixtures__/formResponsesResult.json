@@ -1,0 +1,149 @@
+{
+    "total_items": 471,
+  "page_count": 1,
+  "items": 
+[
+    {
+      "landing_id": "29862c13c9a919816a9c919162",
+      "token": "29862c13c9a919816a9c919162",
+      "response_id": "29862c13c9a919816a9c919162",
+      "landed_at": "2018-10-19T12:52:29Z",
+      "submitted_at": "2018-10-19T12:56:33Z",
+      "metadata": {
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+        "platform": "other",
+        "referer": "https://example.typeform.com/to/AbCeDeF",
+        "network_id": "3c3a3176ac",
+        "browser": "default"
+      },
+      "answers": [
+        {
+          "field": {
+            "id": "Jd5qIzWvTrOX",
+            "type": "yes_no",
+            "ref": "bca11231a-ac51-3a3a-9c9c-v7a8a7c8a87"
+          },
+          "type": "boolean",
+          "boolean": true
+        },
+        {
+            "field": {
+              "id": "RQdFHCQJILlX",
+              "type": "opinion_scale",
+              "ref": "bca11231a-ac51-3a3a-9c9c-v8a98c9a89efa"
+            },
+            "type": "number",
+            "number": 9
+          },
+          {
+            "field": {
+              "id": "NwZ0PgXlhV0M",
+              "type": "multiple_choice",
+              "ref": "bca11231a-ac51-3a3a-9c9c-ac919a9178ac"
+            },
+            "type": "choices",
+            "choices": {
+              "labels": [
+                "Option 1"
+              ],
+              "other": "Option 11"
+            }
+          },
+          {
+            "field": {
+              "id": "CtPB5r54ScEN",
+              "type": "multiple_choice",
+              "ref": "ac4ac4a-acac-a5a5-ac4a-ac5ac3ac5a5a"
+            },
+            "type": "choice",
+            "choice": {
+              "label": "Option 1"
+            }
+          },
+          {
+            "field": {
+              "id": "sg0BxjjAMwXm",
+              "type": "multiple_choice",
+              "ref": "9a9a9a9c9-a5aa-1c1c-2c2c-c2c1c11c1"
+            },
+            "type": "choices",
+            "choices": {
+              "labels": [
+                "No, we don't.",
+                "Sometimes, we do."
+              ]
+            }
+          }
+        ]
+    },
+    {
+        "landing_id": "c1c13c1c1c132c213f13",
+        "token": "c1c13c1c1c132c213f13",
+        "response_id": "c1c13c1c1c132c213f13",
+        "landed_at": "2018-10-20T12:41:51Z",
+        "submitted_at": "2018-10-20T12:41:55Z",
+        "metadata": {
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+          "platform": "other",
+          "referer": "https://example.typeform.com/to/AbCeDeF",
+          "network_id": "c13c1ac132",
+          "browser": "default"
+        },
+        "answers": [
+          {
+            "field": {
+              "id": "Jd5qIzWvTrOX",
+              "type": "yes_no",
+              "ref": "bca11231a-ac51-3a3a-9c9c-v7a8a7c8a87"
+            },
+            "type": "boolean",
+            "boolean": false
+          },
+          {
+              "field": {
+                "id": "RQdFHCQJILlX",
+                "type": "opinion_scale",
+                "ref": "bca11231a-ac51-3a3a-9c9c-v8a98c9a89efa"
+              },
+              "type": "number",
+              "number": 5
+            },
+            {
+              "field": {
+                "id": "NwZ0PgXlhV0M",
+                "type": "multiple_choice",
+                "ref": "bca11231a-ac51-3a3a-9c9c-ac919a9178ac"
+              },
+              "type": "choices",
+              "choices": {
+                "other": "None"
+              }
+            },
+            {
+              "field": {
+                "id": "CtPB5r54ScEN",
+                "type": "multiple_choice",
+                "ref": "ac4ac4a-acac-a5a5-ac4a-ac5ac3ac5a5a"
+              },
+              "type": "choice",
+              "choice": {
+                "label": "Option 2"
+              }
+            },
+            {
+              "field": {
+                "id": "sg0BxjjAMwXm",
+                "type": "multiple_choice",
+                "ref": "9a9a9a9c9-a5aa-1c1c-2c2c-c2c1c11c1"
+              },
+              "type": "choices",
+              "choices": {
+                "labels": [
+                    "We always do"
+                ]
+              }
+            }
+          ]
+      }
+    ]
+}

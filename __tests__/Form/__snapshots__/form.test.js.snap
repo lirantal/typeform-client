@@ -1,0 +1,320 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Fetch Form Responses Form responses full structure is normalized 1`] = `
+Object {
+  "fields": Object {
+    "9a9a9a9c9-a5aa-1c1c-2c2c-c2c1c11c1": Object {
+      "answers": Object {
+        "Maybe most times we do": Array [],
+        "No, we don't.": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "3c3a3176ac",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "29862c13c9a919816a9c919162",
+            "submitted_at": "2018-10-19T12:56:33Z",
+          },
+        ],
+        "Sometimes, we do.": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "3c3a3176ac",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "29862c13c9a919816a9c919162",
+            "submitted_at": "2018-10-19T12:56:33Z",
+          },
+        ],
+        "We always do": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "c13c1ac132",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "c1c13c1c1c132c213f13",
+            "submitted_at": "2018-10-20T12:41:55Z",
+          },
+        ],
+      },
+      "id": "sg0BxjjAMwXm",
+      "properties": Object {
+        "allow_multiple_selection": true,
+        "allow_other_choice": false,
+        "choices": Array [
+          Object {
+            "id": "PcoeAclvpDE5",
+            "label": "No, we don't.",
+            "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c111",
+          },
+          Object {
+            "id": "OLPR3IiM5XxA",
+            "label": "Sometimes, we do.",
+            "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c112",
+          },
+          Object {
+            "id": "hDaOYUg6YuGe",
+            "label": "Maybe most times we do",
+            "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c113",
+          },
+          Object {
+            "id": "xLDaOiyZF7oK",
+            "label": "We always do",
+            "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c114",
+          },
+        ],
+        "description": "(select all that apply)",
+        "randomize": false,
+        "vertical_alignment": true,
+      },
+      "ref": "9a9a9a9c9-a5aa-1c1c-2c2c-c2c1c11c1",
+      "title": "Question number 5?",
+      "totalRespondents": 2,
+      "type": "multiple_choice",
+    },
+    "ac4ac4a-acac-a5a5-ac4a-ac5ac3ac5a5a": Object {
+      "answers": Object {
+        "At least once a Month": Array [],
+        "At least once a Quarter": Array [],
+        "At least once a year": Array [],
+        "Every couple of years or more": Array [],
+        "We don't": Array [],
+        "other": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "c13c1ac132",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "c1c13c1c1c132c213f13",
+            "submitted_at": "2018-10-20T12:41:55Z",
+          },
+        ],
+      },
+      "id": "CtPB5r54ScEN",
+      "properties": Object {
+        "allow_multiple_selection": false,
+        "allow_other_choice": false,
+        "choices": Array [
+          Object {
+            "id": "WKK47VLKMGJl",
+            "label": "Every couple of years or more",
+            "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac1",
+          },
+          Object {
+            "id": "fzLui7PKF35S",
+            "label": "At least once a Month",
+            "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac2",
+          },
+          Object {
+            "id": "FMaBCVyygCn8",
+            "label": "At least once a Quarter",
+            "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac3",
+          },
+          Object {
+            "id": "UmGj8640u0nP",
+            "label": "At least once a year",
+            "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac4",
+          },
+          Object {
+            "id": "DjOBFUZFQi7H",
+            "label": "We don't",
+            "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac5",
+          },
+        ],
+        "randomize": false,
+        "vertical_alignment": true,
+      },
+      "ref": "ac4ac4a-acac-a5a5-ac4a-ac5ac3ac5a5a",
+      "title": "Question number 4?",
+      "totalRespondents": 2,
+      "type": "multiple_choice",
+    },
+    "bca11231a-ac51-3a3a-9c9c-ac919a9178ac": Object {
+      "answers": Object {
+        "Option 1": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "3c3a3176ac",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "29862c13c9a919816a9c919162",
+            "submitted_at": "2018-10-19T12:56:33Z",
+          },
+        ],
+        "Option 2": Array [],
+        "Option 3": Array [],
+        "Option 4": Array [],
+        "other": Array [
+          Object {
+            "data": "Option 11",
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "3c3a3176ac",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "29862c13c9a919816a9c919162",
+            "submitted_at": "2018-10-19T12:56:33Z",
+          },
+          Object {
+            "data": "None",
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "c13c1ac132",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "c1c13c1c1c132c213f13",
+            "submitted_at": "2018-10-20T12:41:55Z",
+          },
+        ],
+      },
+      "id": "NwZ0PgXlhV0M",
+      "properties": Object {
+        "allow_multiple_selection": true,
+        "allow_other_choice": true,
+        "choices": Array [
+          Object {
+            "id": "IlMtThMkmPku",
+            "label": "Option 1",
+            "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac5",
+          },
+          Object {
+            "id": "dRBBejiXZUGP",
+            "label": "Option 2",
+            "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac7",
+          },
+          Object {
+            "id": "EJVwlgz19Fvy",
+            "label": "Option 3",
+            "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac8",
+          },
+          Object {
+            "id": "PyfoKKwKNDsM",
+            "label": "Option 4",
+            "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac9",
+          },
+        ],
+        "randomize": false,
+        "vertical_alignment": true,
+      },
+      "ref": "bca11231a-ac51-3a3a-9c9c-ac919a9178ac",
+      "title": "Question number 3?",
+      "totalRespondents": 2,
+      "type": "multiple_choice",
+    },
+    "bca11231a-ac51-3a3a-9c9c-v7a8a7c8a87": Object {
+      "answers": Object {
+        "no": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "c13c1ac132",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "c1c13c1c1c132c213f13",
+            "submitted_at": "2018-10-20T12:41:55Z",
+          },
+        ],
+        "yes": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "3c3a3176ac",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "29862c13c9a919816a9c919162",
+            "submitted_at": "2018-10-19T12:56:33Z",
+          },
+        ],
+      },
+      "id": "N37sjNq981Ba",
+      "properties": undefined,
+      "ref": "bca11231a-ac51-3a3a-9c9c-v7a8a7c8a87",
+      "title": "Question number 1?",
+      "totalRespondents": 2,
+      "type": "yes_no",
+    },
+    "bca11231a-ac51-3a3a-9c9c-v8a98c9a89efa": Object {
+      "answers": Object {
+        "0": Array [],
+        "1": Array [],
+        "10": Array [],
+        "11": Array [],
+        "2": Array [],
+        "3": Array [],
+        "4": Array [],
+        "5": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "c13c1ac132",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "c1c13c1c1c132c213f13",
+            "submitted_at": "2018-10-20T12:41:55Z",
+          },
+        ],
+        "6": Array [],
+        "7": Array [],
+        "8": Array [],
+        "9": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "3c3a3176ac",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "29862c13c9a919816a9c919162",
+            "submitted_at": "2018-10-19T12:56:33Z",
+          },
+        ],
+      },
+      "id": "TIOUqoiyBSi81",
+      "properties": Object {
+        "labels": Object {
+          "left": "Not knowledgeable",
+          "right": "Extremely knowledgeable",
+        },
+        "start_at_one": false,
+        "steps": 11,
+      },
+      "ref": "bca11231a-ac51-3a3a-9c9c-v8a98c9a89efa",
+      "title": "Question number 2?",
+      "totalRespondents": 2,
+      "type": "opinion_scale",
+    },
+  },
+  "id": "AbCeDeF",
+  "title": "This is a nice form",
+  "totalRespondents": 471,
+  "workspace": Object {
+    "href": "https://api.typeform.com/workspaces/123456",
+  },
+}
+`;

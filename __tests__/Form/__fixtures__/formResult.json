@@ -1,0 +1,169 @@
+{
+    "id": "AbCeDeF",
+    "title": "This is a nice form",
+    "theme": {
+        "href": "https://api.typeform.com/themes/Ez871"
+      },
+    "workspace": {
+      "href": "https://api.typeform.com/workspaces/123456"
+    },
+    "settings": {
+        "is_public": true,
+        "is_trial": false,
+        "language": "en",
+        "progress_bar": "percentage",
+        "show_progress_bar": true,
+        "show_typeform_branding": true,
+        "meta": {
+          "allow_indexing": false
+        }
+      },
+    "fields": [
+        {
+            "id": "N37sjNq981Ba",
+            "title": "Question number 1?",
+            "ref": "bca11231a-ac51-3a3a-9c9c-v7a8a7c8a87",
+            "validations": {
+                "required": true
+            },
+            "type": "yes_no"
+        },
+        {
+            "id": "TIOUqoiyBSi81",
+            "title": "Question number 2?",
+            "ref": "bca11231a-ac51-3a3a-9c9c-v8a98c9a89efa",
+            "properties": {
+                "steps": 11,
+                "start_at_one": false,
+                "labels": {
+                    "left": "Not knowledgeable",
+                    "right": "Extremely knowledgeable"
+                }
+            },
+            "validations": {
+                "required": true
+              },
+              "type": "opinion_scale"
+        },
+        {
+            "id": "NwZ0PgXlhV0M",
+            "title": "Question number 3?",
+            "ref": "bca11231a-ac51-3a3a-9c9c-ac919a9178ac",
+            "properties": {
+                "randomize": false,
+                "allow_multiple_selection": true,
+                "allow_other_choice": true,
+                "vertical_alignment": true,
+                "choices": [
+                    {
+                    "id": "IlMtThMkmPku",
+                    "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac5",
+                    "label": "Option 1"
+                    },
+                    {
+                    "id": "dRBBejiXZUGP",
+                    "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac7",
+                    "label": "Option 2"
+                    },
+                    {
+                    "id": "EJVwlgz19Fvy",
+                    "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac8",
+                    "label": "Option 3"
+                    },
+                    {
+                    "id": "PyfoKKwKNDsM",
+                    "ref": "ac4ac4ac-ac4a-ac4a-ac4a-ac5ac5ac5ac9",
+                    "label": "Option 4"
+                    }
+                ]
+            },
+            "validations": {
+                "required": true
+              },
+            "type": "multiple_choice"
+        },
+        {
+            "id": "CtPB5r54ScEN",
+            "title": "Question number 4?",
+            "ref": "ac4ac4a-acac-a5a5-ac4a-ac5ac3ac5a5a",
+            "properties": {
+                "randomize": false,
+                "allow_multiple_selection": false,
+                "allow_other_choice": false,
+                "vertical_alignment": true,
+                "choices": [
+                {
+                    "id": "WKK47VLKMGJl",
+                    "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac1",
+                    "label": "Every couple of years or more"
+                },
+                {
+                    "id": "fzLui7PKF35S",
+                    "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac2",
+                    "label": "At least once a Month"
+                },
+                {
+                    "id": "FMaBCVyygCn8",
+                    "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac3",
+                    "label": "At least once a Quarter"
+                },
+                {
+                    "id": "UmGj8640u0nP",
+                    "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac4",
+                    "label": "At least once a year"
+                },
+                {
+                    "id": "DjOBFUZFQi7H",
+                    "ref": "5c5c5a5a-ac4a-ac4a-ac4a-ac5ac5ac5ac5",
+                    "label": "We don't"
+                }
+                ]
+            },
+            "validations": {
+                "required": true
+            },
+            "type": "multiple_choice"
+        },
+        {
+            "id": "sg0BxjjAMwXm",
+            "title": "Question number 5?",
+            "ref": "9a9a9a9c9-a5aa-1c1c-2c2c-c2c1c11c1",
+            "properties": {
+              "description": "(select all that apply)",
+              "randomize": false,
+              "allow_multiple_selection": true,
+              "allow_other_choice": false,
+              "vertical_alignment": true,
+              "choices": [
+                {
+                  "id": "PcoeAclvpDE5",
+                  "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c111",
+                  "label": "No, we don't."
+                },
+                {
+                  "id": "OLPR3IiM5XxA",
+                  "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c112",
+                  "label": "Sometimes, we do."
+                },
+                {
+                  "id": "hDaOYUg6YuGe",
+                  "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c113",
+                  "label": "Maybe most times we do"
+                },
+                {
+                  "id": "xLDaOiyZF7oK",
+                  "ref": "c1c31c12-1c1c-3c3c-1c1c-1c13c1c1c114",
+                  "label": "We always do"
+                }
+              ]
+            },
+            "validations": {
+              "required": true
+            },
+            "type": "multiple_choice"
+          }
+    ],
+    "_links": {
+        "display": "https://example.typeform.com/to/AbCeDeF"
+      }
+}
