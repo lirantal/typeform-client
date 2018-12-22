@@ -168,9 +168,9 @@
       "object-curly-spacing": "off"
     },
     "parserOptions": {
+      "ecmaVersion": 8,
       "ecmaFeatures": {
-        "impliedStrict": true,
-        "experimentalObjectRestSpread": true
+        "impliedStrict": true
       }
     }
   },
