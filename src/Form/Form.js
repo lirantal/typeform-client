@@ -107,23 +107,21 @@ module.exports = class Form {
 
     form.totalRespondents = totalRespondents
 
-    // fs.writeFileSync('./formResponsesOriginal.json', JSON.stringify(submissionAnswers, null, 2))
-
     // @TODO fix to also filter the same whitelist questions as before
     submissionAnswers.forEach(submission => {
       submission.answers &&
         submission.answers.forEach(answer => {
           const fieldReference = answer.field.ref
 
-          if (form.fields[fieldReference].totalRespondents) {
-            form.fields[fieldReference].totalRespondents++
-          } else {
-            form.fields[fieldReference].totalRespondents = 1
-          }
-
           const responseAnswerAdaptor = formResponseAnswersAdapters.get(answer.field.type)
           if (responseAnswerAdaptor) {
             const adaptorResponse = responseAnswerAdaptor(submission, answer)
+
+            if (form.fields[fieldReference].totalRespondents) {
+              form.fields[fieldReference].totalRespondents++
+            } else {
+              form.fields[fieldReference].totalRespondents = 1
+            }
 
             if (Array.isArray(adaptorResponse)) {
               adaptorResponse.forEach(({answerLabel, answerData}) => {
