@@ -1,5 +1,8 @@
 <p align="center">
   <h1 align="center"> @lirantal/typeform-client </h1>
+</p>
+
+<p align="center">
   a friendlier Typeform Node.js API client
 </p>
 
