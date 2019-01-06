@@ -1,4 +1,45 @@
-[![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
+<h1 align="center">
+  @lirantal/typeform-client
+</h1>
+
+<p align="center">
+  a friendlier Typeform Node.js API client
+</p>
+
+<p align="center">
+
+<a href="https://www.npmjs.org/package/@lirantal/typeform-client">
+ <img src="https://badgen.net/npm/v/@lirantal/typeform-client"
+      alt="npm version"/></a>
+
+<a href="https://www.npmjs.org/package/@lirantal/typeform-client">
+ <img src="https://badgen.net/npm/license/@lirantal/typeform-client"
+      alt="license"/></a>
+
+<a href="https://www.npmjs.org/package/@lirantal/typeform-client">
+ <img src="https://badgen.net/npm/dt/@lirantal/typeform-client"
+      alt="downloads"/></a>
+
+<a href="https://travis-ci.org/lirantal/typeform-client">
+ <img src="https://badgen.net/travis/lirantal/typeform-client"
+      alt="build"/></a>
+
+<a href="https://codecov.io/gh/lirantal/typeform-client">
+ <img src="https://badgen.net/codecov/c/github/lirantal/typeform-client"
+      alt="codecov"/></a>
+
+<a href="https://snyk.io/test/github/lirantal/typeform-client">
+ <img src="https://snyk.io/test/github/lirantal/typeform-client/badge.svg"
+      alt="known vulnerabilities"/></a>
+
+<a href="https://github.com/semantic-release/semantic-release">
+ <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat"
+      alt="semantic-release"/></a>
+
+<a href="https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md">
+ <img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg"
+      alt="Security Responsible Disclosure"/></a>
+</p>
 
 # About
 
