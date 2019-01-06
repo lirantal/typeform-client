@@ -7,13 +7,13 @@
 - Looping through all the form survey results with the continuation token
 - De-normalizing all the data such as form questions, and their responses, so everything is accessible from an aggregated interface.
 
-## Installation
+# Install
 
 ```bash
 npm install --save @lirantal/typeform-client
 ```
 
-## Usage
+# Example
 
 ```js
 const {Form} = require('@lirantal/typeform-client')
@@ -35,7 +35,7 @@ const form = await typeform.fetchFormResponses(formId)
 // populated with all the answers collected from the survey
 ```
 
-### Supported fields
+## Supported fields
 
 The following form fields are currently supported to extract:
 
@@ -43,33 +43,14 @@ The following form fields are currently supported to extract:
 - Opinion scale questions (`opinion_scale`)
 - All variants of multiple choice questions, including an 'other' field, and single vs multiple answers (`multiple_choice`)
 
-@TODO
+## Unsupported fields
 
 - Free text questions (`short_text`)
 
-## Tests
 
-Project tests:
+# Contributing
 
-```bash
-npm run test
-```
-
-Project linting:
-
-```bash
-npm run lint
-```
-
-## Coverage
-
-```bash
-npm run test:coverage
-```
-
-## Contributing
-
-### Commit Guidelines
+## Commit Guidelines
 
 The project uses the commitizen tool for standardizing changelog style commit
 messages so you should follow it as so:
@@ -78,3 +59,10 @@ messages so you should follow it as so:
 git add .           # add files to staging
 npm run commit      # use the wizard for the commit message
 ```
+
+# Related 
+
+[typeform-export-excel](https://github.com/lirantal/typeform-export-excel) - Export a Typeform survey questionnaire to an Excel format
+
+# Author
+Liran Tal <liran.tal@gmail.com>
