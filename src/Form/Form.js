@@ -14,8 +14,8 @@ module.exports = class Form {
     const form = {}
     const formResult = await this.client.forms.get({uid: formId})
 
-    if (formResult.code && formResult.code === 'FORM_NOT_FOUND') {
-      throw new Error('Form not found, check the provided credentials')
+    if (formResult.code) {
+      throw new Error(`Typeform API returned an error: ${formResult.description}`)
     }
 
     form.id = formResult.id
