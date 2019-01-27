@@ -84,7 +84,7 @@ describe('Form', () => {
       expect(formResponse.fields).toEqual({})
     })
 
-    test('throws rrror on form not found', async () => {
+    test('throws error on form not found', async () => {
       const form = new Form({apiKey: mockToken})
       form.client = {
         forms: {
