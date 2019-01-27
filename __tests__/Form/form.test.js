@@ -84,20 +84,21 @@ describe('Form', () => {
       expect(formResponse.fields).toEqual({})
     })
 
-    test('throws error on form not found', async () => {
+    test('throws rrror on form not found', async () => {
       const form = new Form({apiKey: mockToken})
       form.client = {
         forms: {
           get: jest.fn(() => {
             return {
-              code: 'FORM_NOT_FOUND'
+              code: 'FORM_NOT_FOUND',
+              description: 'form not found'
             }
           })
         }
       }
 
       await expect(form._fetchForm(mockFormId)).rejects.toThrowError(
-        'Form not found, check the provided credentials'
+        'Typeform API returned an error: form not found'
       )
     })
   })
