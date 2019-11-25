@@ -3,6 +3,7 @@
 const {createClient} = require('@typeform/api-client')
 const formFieldAdapters = require('./Adapters/formFieldsAdapters')
 const formResponseAnswersAdapters = require('./Adapters/formResponsesAnswersAdapters')
+const questionStatisticsAdapters = require('./Adapters/questionStatisticsAdapters')
 
 module.exports = class Form {
   constructor({apiKey} = {}) {
@@ -101,6 +102,17 @@ module.exports = class Form {
     }
   }
 
+  _fillStatistics(form) {
+    const fields = Object.values(form.fields)
+    for (const field of fields) {
+      const questionStatisticAdapter = questionStatisticsAdapters.get(field.type)
+      if (questionStatisticAdapter) {
+        const adaptorResponse = questionStatisticAdapter(field.answers)
+        Object.assign(field, adaptorResponse)
+      }
+    }
+  }
+
   async fetchFormResponses(formId) {
     const form = await this._fetchForm(formId)
     const {totalRespondents, submissionAnswers} = await this._fetchResponses(formId)
@@ -146,6 +158,7 @@ module.exports = class Form {
           }
         })
     })
+    this._fillStatistics(form)
 
     return form
   }

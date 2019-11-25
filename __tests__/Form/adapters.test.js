@@ -3,6 +3,9 @@ const formResponseAnswersAdapters = require(path.resolve(
   './src/Form/Adapters/formResponsesAnswersAdapters'
 ))
 const formFieldsAdapters = require(path.resolve('./src/Form/Adapters/formFieldsAdapters'))
+const questionStatisticsAdapters = require(path.resolve(
+  './src/Form/Adapters/questionStatisticsAdapters'
+))
 
 describe('Adapters', () => {
   describe('Forms fields', () => {
@@ -41,6 +44,37 @@ describe('Adapters', () => {
 
       expect(answerObject).toHaveProperty('answerLabel', 'other')
       expect(answerObject).toHaveProperty('answerData.data', mockAnswer.choice.other)
+    })
+  })
+
+  describe('Fields statistics', () => {
+    it('Opinion scale calculates correct median and average', () => {
+      const mockQuestion1 = {
+        1: Array(6),
+        2: Array(4),
+        3: Array(2),
+        4: Array(9)
+      }
+
+      const mockQuestion2 = {
+        1: Array(6),
+        2: Array(12),
+        3: Array(3),
+        4: Array(6)
+      }
+
+      const questionStatisticAdapter = questionStatisticsAdapters.get('opinion_scale')
+      const adaptorResponse1 = questionStatisticAdapter(mockQuestion1)
+      const adaptorResponse2 = questionStatisticAdapter(mockQuestion2)
+
+      expect(adaptorResponse1).toMatchObject({
+        median: 3,
+        average: 2.67
+      })
+      expect(adaptorResponse2).toMatchObject({
+        median: 2,
+        average: 2.33
+      })
     })
   })
 })

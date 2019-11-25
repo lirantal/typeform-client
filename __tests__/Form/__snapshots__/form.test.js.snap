@@ -294,7 +294,9 @@ Object {
           },
         ],
       },
+      "average": 7,
       "id": "TIOUqoiyBSi81",
+      "median": 7,
       "properties": Object {
         "labels": Object {
           "left": "Not knowledgeable",
