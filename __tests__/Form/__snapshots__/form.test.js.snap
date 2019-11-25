@@ -308,7 +308,6 @@ Object {
         "0": Array [],
         "1": Array [],
         "10": Array [],
-        "11": Array [],
         "2": Array [],
         "3": Array [],
         "4": Array [],
@@ -342,7 +341,9 @@ Object {
           },
         ],
       },
+      "average": 7,
       "id": "TIOUqoiyBSi81",
+      "median": 7,
       "properties": Object {
         "labels": Object {
           "left": "Not knowledgeable",
