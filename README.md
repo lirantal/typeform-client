@@ -59,9 +59,6 @@ The following form fields are currently supported to extract:
 - Yes/No questions (`yes_no`)
 - Opinion scale questions (`opinion_scale`)
 - All variants of multiple choice questions, including an 'other' field, and single vs multiple answers (`multiple_choice`)
-
-## Unsupported fields
-
 - Free text questions (`short_text`)
 
 # Related
