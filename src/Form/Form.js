@@ -133,11 +133,6 @@ module.exports = class Form {
             } else if (typeof adaptorResponse === 'object') {
               let {answerLabel, answerData} = adaptorResponse
 
-              if (form.fields[fieldReference].answers[answerLabel] === undefined) {
-                answerLabel = 'other'
-                form.fields[fieldReference].answers[answerLabel] = []
-              }
-
               const newAnswersList = form.fields[fieldReference].answers[answerLabel].concat(
                 answerData
               )

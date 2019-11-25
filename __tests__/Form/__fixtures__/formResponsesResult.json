@@ -57,7 +57,7 @@
             },
             "type": "choice",
             "choice": {
-              "label": "Option 1"
+              "label": "Every couple of years or more"
             }
           },
           {
@@ -127,7 +127,7 @@
               },
               "type": "choice",
               "choice": {
-                "label": "Option 2"
+                "label": "At least once a Month"
               }
             },
             {
