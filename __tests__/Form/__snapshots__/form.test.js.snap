@@ -3,6 +3,42 @@
 exports[`Form Fetch Form Responses Form responses full structure is normalized 1`] = `
 Object {
   "fields": Object {
+    "500ea3ea-a37e-46da-aca4-01d294c22fb0": Object {
+      "answers": Object {
+        "Bart": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "3c3a3176ac",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "29862c13c9a919816a9c919162",
+            "submitted_at": "2018-10-19T12:56:33Z",
+          },
+        ],
+        "Homer": Array [
+          Object {
+            "metadata": Object {
+              "browser": "default",
+              "network_id": "c13c1ac132",
+              "platform": "other",
+              "referer": "https://example.typeform.com/to/AbCeDeF",
+              "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+            },
+            "response_id": "c1c13c1c1c132c213f13",
+            "submitted_at": "2018-10-20T12:41:55Z",
+          },
+        ],
+      },
+      "id": "tCDuMq4dJaIf",
+      "properties": undefined,
+      "ref": "500ea3ea-a37e-46da-aca4-01d294c22fb0",
+      "title": "Question number 6?",
+      "totalRespondents": 2,
+      "type": "short_text",
+    },
     "9a9a9a9c9-a5aa-1c1c-2c2c-c2c1c11c1": Object {
       "answers": Object {
         "Maybe most times we do": Array [],

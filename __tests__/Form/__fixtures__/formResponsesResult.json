@@ -73,6 +73,15 @@
                 "Sometimes, we do."
               ]
             }
+          },
+          {
+            "field": {
+              "id": "tCDuMq4dJaIf",
+              "type": "short_text",
+              "ref": "500ea3ea-a37e-46da-aca4-01d294c22fb0"
+            },
+            "type": "text",
+            "text": "Bart"
           }
         ]
     },
@@ -142,6 +151,15 @@
                     "We always do"
                 ]
               }
+            },
+            {
+              "field": {
+                "id": "tCDuMq4dJaIf",
+                "type": "short_text",
+                "ref": "500ea3ea-a37e-46da-aca4-01d294c22fb0"
+              },
+              "type": "text",
+              "text": "Homer"
             }
           ]
       }

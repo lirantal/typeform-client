@@ -79,4 +79,16 @@ formResponseAnswersAdapters.set('multiple_choice', (submission, answer) => {
   }
 })
 
+formResponseAnswersAdapters.set('short_text', (submission, answer) => {
+  const answerSubmission = {
+    response_id: submission.response_id,
+    submitted_at: submission.submitted_at,
+    metadata: submission.metadata
+  }
+  return {
+    answerLabel: answer.text,
+    answerData: answerSubmission
+  }
+})
+
 module.exports = formResponseAnswersAdapters

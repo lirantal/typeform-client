@@ -34,4 +34,8 @@ formFieldsAnswersAdapters.set('multiple_choice', questionField => {
   return answers
 })
 
+formFieldsAnswersAdapters.set('short_text', questionField => {
+  return {}
+})
+
 module.exports = formFieldsAnswersAdapters
