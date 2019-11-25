@@ -10,10 +10,10 @@ formFieldsAnswersAdapters.set('yes_no', () => {
 
 formFieldsAnswersAdapters.set('opinion_scale', questionField => {
   const countStart = questionField.properties.start_at_one ? 1 : 0
-  const countFinish = questionField.properties.steps
+  const countFinish = questionField.properties.steps + countStart
 
   const scaleOptions = {}
-  for (let i = countStart; i <= countFinish; i++) {
+  for (let i = countStart; i < countFinish; i++) {
     scaleOptions[i] = []
   }
 
