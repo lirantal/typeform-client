@@ -29,7 +29,7 @@ module.exports = class Form {
   }
 
   _getFormQuestions(form) {
-    const formTypesWhitelist = ['yes_no', 'opinion_scale', 'multiple_choice']
+    const formTypesWhitelist = ['yes_no', 'opinion_scale', 'multiple_choice', 'short_text']
     let formQuestions = {}
 
     formQuestions = form.fields
@@ -146,7 +146,6 @@ module.exports = class Form {
               let {answerLabel, answerData} = adaptorResponse
 
               if (form.fields[fieldReference].answers[answerLabel] === undefined) {
-                answerLabel = 'other'
                 form.fields[fieldReference].answers[answerLabel] = []
               }
 

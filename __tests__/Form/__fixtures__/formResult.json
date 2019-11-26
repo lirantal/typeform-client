@@ -161,6 +161,15 @@
               "required": true
             },
             "type": "multiple_choice"
+          },
+          {
+            "id": "tCDuMq4dJaIf",
+            "title": "Question number 6?",
+            "ref": "500ea3ea-a37e-46da-aca4-01d294c22fb0",
+            "validations": {
+              "required": true
+            },
+            "type": "short_text"
           }
     ],
     "_links": {
