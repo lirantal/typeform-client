@@ -1,8 +1,4 @@
 {
-  "publishConfig": {
-    "provenance": true,
-    "access": "public"
-  },
   "name": "@lirantal/typeform-client",
   "version": "0.0.0-development",
   "description": "A friendlier Typeform Node.js API client",
@@ -201,5 +197,9 @@
         }
       ]
     }
+  },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
   }
 }
