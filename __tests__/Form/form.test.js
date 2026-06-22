@@ -1,4 +1,9 @@
 const path = require('path')
+
+jest.mock('@typeform/api-client', () => ({
+  createClient: jest.fn(() => ({}))
+}))
+
 const {Form} = require(path.resolve('./index.js'))
 
 describe('Form', () => {
