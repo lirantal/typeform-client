@@ -73,9 +73,13 @@
     "lint-staged": "^8.1.0",
     "opn-cli": "^4.0.0",
     "prettier-standard": "^8.0.1",
+<<<<<<< HEAD
     "@changesets/changelog-github": "^0.6.0",
     "@changesets/cli": "^2.31.0",
     "markdownlint-cli": "0.45.0"
+=======
+    "semantic-release": "25.0.3"
+>>>>>>> origin/master
   },
   "jest": {
     "testEnvironment": "node",
