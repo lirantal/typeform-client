@@ -34,7 +34,7 @@ formFieldsAnswersAdapters.set('multiple_choice', questionField => {
   return answers
 })
 
-formFieldsAnswersAdapters.set('short_text', questionField => {
+formFieldsAnswersAdapters.set('short_text', () => {
   return {}
 })
 
