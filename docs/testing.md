@@ -25,7 +25,9 @@ npm run lint
 ## Required Coverage Checks
 
 CI runs Jest with the coverage thresholds in `package.json` and uploads
-`coverage/lcov.info` to Codecov for every contributor, including Dependabot.
+its coverage reports to Codecov for every contributor, including Dependabot.
+Keep report selection consistent with the default branch: switching to LCOV
+alone changed the reported percentage without any source changes.
 The public repository currently accepts tokenless uploads; `CODECOV_TOKEN` can
 also be supplied as an Actions secret and a Dependabot secret if authentication
 is required in the future. Upload failures fail CI.
