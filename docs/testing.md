@@ -28,9 +28,10 @@ CI runs Jest with the coverage thresholds in `package.json` and uploads
 its coverage reports to Codecov for every contributor, including Dependabot.
 Keep report selection consistent with the default branch: switching to LCOV
 alone changed the reported percentage without any source changes.
-The public repository currently accepts tokenless uploads; `CODECOV_TOKEN` can
-also be supplied as an Actions secret and a Dependabot secret if authentication
-is required in the future. Upload failures fail CI.
+The public repository uses the `lirantal` account's tokenless upload setting
+in Codecov (Settings → Global Upload Token). No upload secret is passed to CI.
+Upload failures fail CI. The Codecov GitHub App separately needs access to this
+repository to publish coverage checks and PR comments.
 
 Branch protection requires `codecov/project` and `codecov/patch` plus one
 approving review. Keep these requirements enabled. `.codecov.yml` explicitly
