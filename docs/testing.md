@@ -16,7 +16,6 @@ Run lint checks with:
 npm run lint
 ```
 
-
 ## Expectations
 
 - Add or update tests for behavior changes.
