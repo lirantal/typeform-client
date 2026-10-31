@@ -27,12 +27,11 @@ jobs:
         run: npm run build
       - name: run tests
         run: npm run test
+      # Public uploads are tokenless; include Dependabot uploads.
       - name: coverage
         uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
-        if: github.actor != 'dependabot[bot]'
         with:
-          fail_ci_if_error: false
+          fail_ci_if_error: true
           verbose: false
-          token: ${{ secrets.CODECOV_TOKEN }}
         env:
           CI: true
