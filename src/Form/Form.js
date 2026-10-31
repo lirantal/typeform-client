@@ -30,9 +30,7 @@ module.exports = class Form {
 
   _getFormQuestions(form) {
     const formTypesWhitelist = ['yes_no', 'opinion_scale', 'multiple_choice', 'short_text']
-    let formQuestions = {}
-
-    formQuestions = form.fields
+    const formQuestions = form.fields
       .filter(questionField => {
         // skip fields we don't handle as questions
         return !!formTypesWhitelist.includes(questionField.type)

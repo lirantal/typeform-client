@@ -39,3 +39,7 @@ still requires one approving review.
 
 See [Codecov status configuration](https://docs.codecov.com/docs/commit-status)
 and [upload authentication](https://docs.codecov.com/docs/codecov-tokens).
+
+Jest 30 retains the existing coverage thresholds and snapshot formatting.
+Release tooling uses Changesets CLI 3 with changesets/action 2; its publish,
+version, commit-message and PR-title inputs are migrated together.
