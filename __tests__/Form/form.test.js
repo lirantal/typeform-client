@@ -102,7 +102,7 @@ describe('Form', () => {
         }
       }
 
-      await expect(form._fetchForm(mockFormId)).rejects.toThrowError(
+      await expect(form._fetchForm(mockFormId)).rejects.toThrow(
         'Typeform API returned an error: form not found'
       )
     })
