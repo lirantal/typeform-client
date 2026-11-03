@@ -85,7 +85,7 @@ module.exports = class Form {
         totalRespondents = apiResult.total_items
       }
 
-      if (apiResult.page_count === 1) {
+      if (apiResult.items.length === 0 || apiResult.page_count === 1) {
         break
       } else {
         const len = apiResult.items.length

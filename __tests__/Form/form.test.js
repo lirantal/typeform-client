@@ -109,6 +109,54 @@ describe('Form', () => {
   })
 
   describe('Fetch Form Responses', () => {
+    test('returns form questions with no responses when the first page is empty', async () => {
+      const mockFormResult = require('./__fixtures__/formResult.json')
+      const form = new Form({apiKey: mockToken})
+      form.client = {
+        forms: {get: jest.fn().mockResolvedValue(mockFormResult)},
+        responses: {
+          list: jest.fn().mockResolvedValue({page_count: 0, total_items: 0, items: []})
+        }
+      }
+
+      const result = await form.fetchFormResponses(mockFormId)
+
+      expect(result.id).toBe(mockFormResult.id)
+      expect(result.totalRespondents).toBe(0)
+      expect(Object.keys(result.fields).length).toBeGreaterThan(0)
+      for (const field of Object.values(result.fields)) {
+        for (const answers of Object.values(field.answers)) {
+          expect(answers).toEqual([])
+        }
+      }
+      expect(form.client.responses.list).toHaveBeenCalledTimes(1)
+    })
+
+    test('preserves responses and stops pagination when a later page is empty', async () => {
+      const form = new Form({apiKey: mockToken})
+      const items = [{token: 'first'}, {token: 'second'}]
+      form.client = {
+        responses: {
+          list: jest.fn()
+            .mockResolvedValueOnce({page_count: 2, total_items: 2, items})
+            .mockResolvedValueOnce({page_count: 0, total_items: 0, items: []})
+        }
+      }
+
+      await expect(form._fetchResponses(mockFormId)).resolves.toEqual({
+        submissionAnswers: items,
+        totalRespondents: 2
+      })
+      expect(form.client.responses.list).toHaveBeenCalledTimes(2)
+      expect(form.client.responses.list).toHaveBeenLastCalledWith({
+        uid: mockFormId,
+        pageSize: 1000,
+        completed: true,
+        sort: 'submitted_at,asc',
+        after: 'second'
+      })
+    })
+
     test('Form responses full structure is normalized', async () => {
       const mockFormResult = require('./__fixtures__/formResult.json')
       const mockFormResponses = require('./__fixtures__/formResponsesResult.json')
