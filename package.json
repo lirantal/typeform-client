@@ -1,6 +1,6 @@
 {
   "name": "@lirantal/typeform-client",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "A friendlier Typeform Node.js API client",
   "main": "index.js",
   "engines": {
