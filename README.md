@@ -50,6 +50,9 @@ const form = await typeform.fetchFormResponses(formId)
 // populated with all the answers collected from the survey
 ```
 
+Forms with no responses return their questions with empty answer collections and
+`totalRespondents: 0`.
+
 ## Supported fields
 
 The following form fields are currently supported to extract:
