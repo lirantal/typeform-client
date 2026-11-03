@@ -1,6 +1,6 @@
 # @lirantal/typeform-client
 
-## 0.0.0
+## 1.2.6
 
 ### Patch Changes
 
